@@ -98,7 +98,7 @@
   (request
    "http://query.yahooapis.com/v1/public/yql"
    :params `((q . ,(stock-ticker--query stock-ticker-symbols))
-             (env . "http://datatables.org/alltables.env")
+             (env . "http://www.datatables.org/alltables.env")
              (format . "json"))
    :parser 'json-read
    :success (function*
